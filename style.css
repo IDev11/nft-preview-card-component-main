@@ -28,21 +28,35 @@ body {
     border-radius: 0.4rem;
 }
 
-.accent {
-    background-color: hsl(178, 100%, 50%);
+.equil-hover {
+    position: absolute;
     width: 18rem;
     height: 15.5rem;
     margin-top: 1rem;
     border-radius: 0.47rem;
-    background-image: url(./images/icon-view.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.equil-hover img {
+    position: absolute;
+    top: 42%;
+    left: 42%;
+    opacity: 1;
+    z-index: 1000;
+}
+
+.equil-hover:hover {
+    background: hsl(178, 100%, 50%, 50%);
+    opacity: 1;
 }
 
 .equil {
+    position: relative;
     height: 15.5rem;
     width: 18rem;
-    margin-top: 0rem;
+    margin-top: 1rem;
     border-radius: 0.4rem;
 }
 
